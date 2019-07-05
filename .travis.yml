@@ -3,8 +3,8 @@ services:
         - docker
 
 before_install:
-        - docker build -t bicefalo/docker-react:1.0 . 
+        - docker build -t bicefalo/docker-react .
 
 script: 
-        - docker run  bicefalo/docker-react:1.0  npm run test -- --coverage
+        - docker run  bicefalo/docker-react  npm run test -- --coverage
 
